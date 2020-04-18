@@ -1,0 +1,39 @@
+{
+  "name": "wesoar",
+  "version": "1.0.0",
+  "description": "Application to handle hr operation",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node dist/src/App.js",
+    "tsc": "tsc",
+    "build": "tsc && serverless offline start",
+    "deploy": "tsc && serverless deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Wesoar Team",
+  "license": "Wesoar.ai",
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/express-graphql": "^0.9.0",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^13.9.0",
+    "mongodb-typescript": "^2.2.0",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.12.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.6.0",
+    "graphql-tools": "^4.0.7",
+    "i18n": "^0.9.0",
+    "mongoose": "^5.9.9",
+    "reflect-metadata": "^0.1.13",
+    "serverless-http": "^2.3.2",
+    "serverless-offline": "^6.1.4",
+    "wesoar-entity": "file:../wesoar-entity"
+  }
+}
